@@ -1,10 +1,10 @@
-import React , {useState} from "react";
+import React from "react";
 import "./Icon.css";
 
-const Icon = ()=>{
+const Icon = (props)=>{
 
     return (
-        <div className="icon circle blue">
+        <div className={`${props.shape} ${props.color}`}>
 
         </div>
     )

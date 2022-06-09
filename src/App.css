@@ -47,6 +47,9 @@ table {
 	border-spacing: 0;
 }
 
-body { 
+.game-container { 
   background: black;
+  display: flex;
+  height: 100vh;
+  gap: 10px;
 }

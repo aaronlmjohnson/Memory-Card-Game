@@ -2,11 +2,11 @@ import React , {useState} from "react";
 import "./Card.css";
 import Icon from "./Icon";
 
-const Card = ()=>{
+const Card = (props)=>{
 
     return (
         <div className="card">
-            <Icon />
+            <Icon shape={props.shape} color={props.color}/>
         </div>
     )
 }
