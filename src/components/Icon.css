@@ -4,11 +4,13 @@ https://css-tricks.com/the-shapes-of-css/ */
 .circle {
     height: 50%;
     width: 50%;
+    background-color: blue;
 }
 
 .square {
     height: 50%;
     width: 50%;
+    background-color: orange;
 }
 
 .triangle{
@@ -16,7 +18,7 @@ https://css-tricks.com/the-shapes-of-css/ */
 	height: 0;
 	border-left: 100px solid transparent;
 	border-right: 100px solid transparent;
-    border-bottom: 200px solid white;
+    border-bottom: 200px solid cyan;
 
 }
 
@@ -25,16 +27,16 @@ https://css-tricks.com/the-shapes-of-css/ */
     margin: 50px 0;
     position: relative;
     display: block;
-    color: red;
+    color: green;
     width: 0px;
     height: 0px;
     border-right: 100px solid transparent;
-    border-bottom: 70px solid red;
+    border-bottom: 70px solid green;
     border-left: 100px solid transparent;
     transform: rotate(35deg);
   }
   .star:before {
-    border-bottom: 80px solid red;
+    border-bottom: 80px solid green;
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
     position: absolute;
@@ -49,13 +51,13 @@ https://css-tricks.com/the-shapes-of-css/ */
   .star:after {
     position: absolute;
     display: block;
-    color: red;
+    color: green;
     top: 3px;
     left: -105px;
     width: 0px;
     height: 0px;
     border-right: 100px solid transparent;
-    border-bottom: 70px solid red;
+    border-bottom: 70px solid green;
     border-left: 100px solid transparent;
     transform: rotate(-70deg);
     content: '';
@@ -94,7 +96,7 @@ https://css-tricks.com/the-shapes-of-css/ */
     width: 0;
     height: 0;
     border: 50px solid transparent;
-    border-bottom: 70px solid red;
+    border-bottom: 70px solid violet;
     position: relative;
     top: -50px;
   }
@@ -106,7 +108,7 @@ https://css-tricks.com/the-shapes-of-css/ */
     width: 0;
     height: 0;
     border: 50px solid transparent;
-    border-top: 70px solid red;
+    border-top: 70px solid violet;
   }
 /*diamond*/
 
@@ -117,7 +119,7 @@ https://css-tricks.com/the-shapes-of-css/ */
       box-sizing: content-box;
       border-width: 50px 18px 0;
       border-style: solid;
-      border-color: red transparent;
+      border-color: indigo transparent;
     }
 .pentagon:before {
     content: "";
@@ -128,40 +130,43 @@ https://css-tricks.com/the-shapes-of-css/ */
     left: -18px;
     border-width: 0 45px 35px;
     border-style: solid;
-    border-color: transparent transparent red;
+    border-color: transparent transparent indigo;
 }
 
 /*pentagon*/
 
-/*octagon*/
 
-.octagon {
+/*hexagon*/
+
+.hexagon {
     width: 100px;
-    height: 100px;
-    background: red;
+    height: 57.735px;
+    background: yellow;
     position: relative;
   }
-.octagon:before {
+.hexagon::before {
     content: "";
-    width: 100px;
-    height: 0;
     position: absolute;
-    top: 0;
+    top: -28.8675px;
     left: 0;
-    border-bottom: 29px solid red;
-    border-left: 29px solid #eee;
-    border-right: 29px solid #eee;
-}
-.octagon:after {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 28.8675px solid yellow;
+  }
+.hexagon::after {
     content: "";
-    width: 100px;
-    height: 0;
     position: absolute;
-    bottom: 0;
+    bottom: -28.8675px;
     left: 0;
-    border-top: 29px solid red;
-    border-left: 29px solid #eee;
-    border-right: 29px solid #eee;
-}
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 28.8675px solid yellow;
+  }
+
+  /*hexagon*/
   
 
