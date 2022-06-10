@@ -1,5 +1,6 @@
 import React from "react";
 import "./Icon.css";
+import "./Icon.scss";
 
 const addColorToShape = (shape, color)=>{
 
