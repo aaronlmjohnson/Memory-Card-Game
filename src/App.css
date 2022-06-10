@@ -49,7 +49,8 @@ table {
 
 .game-container { 
   background: black;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   height: 100vh;
   gap: 10px;
 }
