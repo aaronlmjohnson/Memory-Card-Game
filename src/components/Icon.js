@@ -8,8 +8,8 @@ const addColorToShape = (shape, color)=>{
 
 const Icon = (props)=>{
     return (
-        <div className={`${props.shape} ${props.color}`}>
-
+        <div className={`${props.color}-${props.shape}`}>
+            
         </div>
     )
 }

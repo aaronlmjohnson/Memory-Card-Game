@@ -1,27 +1,310 @@
 /*CSS for the shapes can be found at 
 https://css-tricks.com/the-shapes-of-css/ */
-.circle {
-  height: 50%;
-  width: 50%;
-  background-color: blue;
+/*star*/
+/*star*/
+/*heart*/
+/*heart*/
+/*diamond*/
+/*diamond*/
+/*pentagon*/
+/*pentagon*/
+/*hexagon*/
+/*hexagon*/
+.red-circle {
+  height: 20%;
+  width: 20%;
+  border-radius: 50%;
+  background-color: red;
 }
 
-.square {
-  height: 50%;
-  width: 50%;
+.orange-circle {
+  height: 20%;
+  width: 20%;
+  border-radius: 50%;
   background-color: orange;
 }
 
-.triangle {
-  width: 0;
-  height: 0;
-  border-left: 100px solid transparent;
-  border-right: 100px solid transparent;
-  border-bottom: 200px solid cyan;
+.yellow-circle {
+  height: 20%;
+  width: 20%;
+  border-radius: 50%;
+  background-color: yellow;
 }
 
-/*star*/
-.star {
+.green-circle {
+  height: 20%;
+  width: 20%;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.blue-circle {
+  height: 20%;
+  width: 20%;
+  border-radius: 50%;
+  background-color: blue;
+}
+
+.indigo-circle {
+  height: 20%;
+  width: 20%;
+  border-radius: 50%;
+  background-color: indigo;
+}
+
+.violet-circle {
+  height: 20%;
+  width: 20%;
+  border-radius: 50%;
+  background-color: violet;
+}
+
+.cyan-circle {
+  height: 20%;
+  width: 20%;
+  border-radius: 50%;
+  background-color: cyan;
+}
+
+.red-triangle {
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 120px solid red;
+}
+
+.orange-triangle {
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 120px solid orange;
+}
+
+.yellow-triangle {
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 120px solid yellow;
+}
+
+.green-triangle {
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 120px solid green;
+}
+
+.blue-triangle {
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 120px solid blue;
+}
+
+.indigo-triangle {
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 120px solid indigo;
+}
+
+.violet-triangle {
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 120px solid violet;
+}
+
+.cyan-triangle {
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 120px solid cyan;
+}
+
+.red-square {
+  height: 20%;
+  width: 20%;
+  background-color: red;
+}
+
+.orange-square {
+  height: 20%;
+  width: 20%;
+  background-color: orange;
+}
+
+.yellow-square {
+  height: 20%;
+  width: 20%;
+  background-color: yellow;
+}
+
+.green-square {
+  height: 20%;
+  width: 20%;
+  background-color: green;
+}
+
+.blue-square {
+  height: 20%;
+  width: 20%;
+  background-color: blue;
+}
+
+.indigo-square {
+  height: 20%;
+  width: 20%;
+  background-color: indigo;
+}
+
+.violet-square {
+  height: 20%;
+  width: 20%;
+  background-color: violet;
+}
+
+.cyan-square {
+  height: 20%;
+  width: 20%;
+  background-color: cyan;
+}
+
+.red-star {
+  margin: 50px 0;
+  position: relative;
+  display: block;
+  color: red;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid red;
+  border-left: 100px solid transparent;
+  transform: rotate(35deg);
+}
+
+.red-star:before {
+  border-bottom: 80px solid red;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -45px;
+  left: -65px;
+  display: block;
+  content: "";
+  transform: rotate(-35deg);
+}
+
+.red-star:after {
+  position: absolute;
+  display: block;
+  color: red;
+  top: 3px;
+  left: -105px;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid red;
+  border-left: 100px solid transparent;
+  transform: rotate(-70deg);
+  content: "";
+}
+
+.orange-star {
+  margin: 50px 0;
+  position: relative;
+  display: block;
+  color: orange;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid orange;
+  border-left: 100px solid transparent;
+  transform: rotate(35deg);
+}
+
+.orange-star:before {
+  border-bottom: 80px solid orange;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -45px;
+  left: -65px;
+  display: block;
+  content: "";
+  transform: rotate(-35deg);
+}
+
+.orange-star:after {
+  position: absolute;
+  display: block;
+  color: orange;
+  top: 3px;
+  left: -105px;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid orange;
+  border-left: 100px solid transparent;
+  transform: rotate(-70deg);
+  content: "";
+}
+
+.yellow-star {
+  margin: 50px 0;
+  position: relative;
+  display: block;
+  color: yellow;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid yellow;
+  border-left: 100px solid transparent;
+  transform: rotate(35deg);
+}
+
+.yellow-star:before {
+  border-bottom: 80px solid yellow;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -45px;
+  left: -65px;
+  display: block;
+  content: "";
+  transform: rotate(-35deg);
+}
+
+.yellow-star:after {
+  position: absolute;
+  display: block;
+  color: yellow;
+  top: 3px;
+  left: -105px;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid yellow;
+  border-left: 100px solid transparent;
+  transform: rotate(-70deg);
+  content: "";
+}
+
+.green-star {
   margin: 50px 0;
   position: relative;
   display: block;
@@ -34,7 +317,7 @@ https://css-tricks.com/the-shapes-of-css/ */
   transform: rotate(35deg);
 }
 
-.star:before {
+.green-star:before {
   border-bottom: 80px solid green;
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
@@ -48,7 +331,7 @@ https://css-tricks.com/the-shapes-of-css/ */
   transform: rotate(-35deg);
 }
 
-.star:after {
+.green-star:after {
   position: absolute;
   display: block;
   color: green;
@@ -63,16 +346,182 @@ https://css-tricks.com/the-shapes-of-css/ */
   content: "";
 }
 
-/*star*/
-/*heart*/
-.heart {
+.blue-star {
+  margin: 50px 0;
+  position: relative;
+  display: block;
+  color: blue;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid blue;
+  border-left: 100px solid transparent;
+  transform: rotate(35deg);
+}
+
+.blue-star:before {
+  border-bottom: 80px solid blue;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -45px;
+  left: -65px;
+  display: block;
+  content: "";
+  transform: rotate(-35deg);
+}
+
+.blue-star:after {
+  position: absolute;
+  display: block;
+  color: blue;
+  top: 3px;
+  left: -105px;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid blue;
+  border-left: 100px solid transparent;
+  transform: rotate(-70deg);
+  content: "";
+}
+
+.indigo-star {
+  margin: 50px 0;
+  position: relative;
+  display: block;
+  color: indigo;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid indigo;
+  border-left: 100px solid transparent;
+  transform: rotate(35deg);
+}
+
+.indigo-star:before {
+  border-bottom: 80px solid indigo;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -45px;
+  left: -65px;
+  display: block;
+  content: "";
+  transform: rotate(-35deg);
+}
+
+.indigo-star:after {
+  position: absolute;
+  display: block;
+  color: indigo;
+  top: 3px;
+  left: -105px;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid indigo;
+  border-left: 100px solid transparent;
+  transform: rotate(-70deg);
+  content: "";
+}
+
+.violet-star {
+  margin: 50px 0;
+  position: relative;
+  display: block;
+  color: violet;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid violet;
+  border-left: 100px solid transparent;
+  transform: rotate(35deg);
+}
+
+.violet-star:before {
+  border-bottom: 80px solid violet;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -45px;
+  left: -65px;
+  display: block;
+  content: "";
+  transform: rotate(-35deg);
+}
+
+.violet-star:after {
+  position: absolute;
+  display: block;
+  color: violet;
+  top: 3px;
+  left: -105px;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid violet;
+  border-left: 100px solid transparent;
+  transform: rotate(-70deg);
+  content: "";
+}
+
+.cyan-star {
+  margin: 50px 0;
+  position: relative;
+  display: block;
+  color: cyan;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid cyan;
+  border-left: 100px solid transparent;
+  transform: rotate(35deg);
+}
+
+.cyan-star:before {
+  border-bottom: 80px solid cyan;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -45px;
+  left: -65px;
+  display: block;
+  content: "";
+  transform: rotate(-35deg);
+}
+
+.cyan-star:after {
+  position: absolute;
+  display: block;
+  color: cyan;
+  top: 3px;
+  left: -105px;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid cyan;
+  border-left: 100px solid transparent;
+  transform: rotate(-70deg);
+  content: "";
+}
+
+.red-heart {
   position: relative;
   width: 100px;
   height: 90px;
 }
 
-.heart:before,
-.heart:after {
+.red-heart:before,
+.red-heart:after {
   position: absolute;
   content: "";
   left: 50px;
@@ -85,15 +534,315 @@ https://css-tricks.com/the-shapes-of-css/ */
   transform-origin: 0 100%;
 }
 
-.heart:after {
+.red-heart:after {
   left: 0;
   transform: rotate(45deg);
   transform-origin: 100% 100%;
 }
 
-/*heart*/
-/*diamond*/
-.diamond {
+.orange-heart {
+  position: relative;
+  width: 100px;
+  height: 90px;
+}
+
+.orange-heart:before,
+.orange-heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: orange;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.orange-heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+.yellow-heart {
+  position: relative;
+  width: 100px;
+  height: 90px;
+}
+
+.yellow-heart:before,
+.yellow-heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: yellow;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.yellow-heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+.green-heart {
+  position: relative;
+  width: 100px;
+  height: 90px;
+}
+
+.green-heart:before,
+.green-heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: green;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.green-heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+.blue-heart {
+  position: relative;
+  width: 100px;
+  height: 90px;
+}
+
+.blue-heart:before,
+.blue-heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: blue;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.blue-heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+.indigo-heart {
+  position: relative;
+  width: 100px;
+  height: 90px;
+}
+
+.indigo-heart:before,
+.indigo-heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: indigo;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.indigo-heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+.violet-heart {
+  position: relative;
+  width: 100px;
+  height: 90px;
+}
+
+.violet-heart:before,
+.violet-heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: violet;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.violet-heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+.cyan-heart {
+  position: relative;
+  width: 100px;
+  height: 90px;
+}
+
+.cyan-heart:before,
+.cyan-heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: cyan;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.cyan-heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+.red-diamond {
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom: 70px solid red;
+  position: relative;
+  top: -50px;
+}
+
+.red-diamond:after {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 70px;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-top: 70px solid red;
+}
+
+.orange-diamond {
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom: 70px solid orange;
+  position: relative;
+  top: -50px;
+}
+
+.orange-diamond:after {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 70px;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-top: 70px solid orange;
+}
+
+.yellow-diamond {
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom: 70px solid yellow;
+  position: relative;
+  top: -50px;
+}
+
+.yellow-diamond:after {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 70px;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-top: 70px solid yellow;
+}
+
+.green-diamond {
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom: 70px solid green;
+  position: relative;
+  top: -50px;
+}
+
+.green-diamond:after {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 70px;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-top: 70px solid green;
+}
+
+.blue-diamond {
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom: 70px solid blue;
+  position: relative;
+  top: -50px;
+}
+
+.blue-diamond:after {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 70px;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-top: 70px solid blue;
+}
+
+.indigo-diamond {
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom: 70px solid indigo;
+  position: relative;
+  top: -50px;
+}
+
+.indigo-diamond:after {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 70px;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-top: 70px solid indigo;
+}
+
+.violet-diamond {
   width: 0;
   height: 0;
   border: 50px solid transparent;
@@ -102,7 +851,7 @@ https://css-tricks.com/the-shapes-of-css/ */
   top: -50px;
 }
 
-.diamond:after {
+.violet-diamond:after {
   content: "";
   position: absolute;
   left: -50px;
@@ -113,9 +862,132 @@ https://css-tricks.com/the-shapes-of-css/ */
   border-top: 70px solid violet;
 }
 
-/*diamond*/
-/*pentagon*/
-.pentagon {
+.cyan-diamond {
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom: 70px solid cyan;
+  position: relative;
+  top: -50px;
+}
+
+.cyan-diamond:after {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 70px;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-top: 70px solid cyan;
+}
+
+.red-pentagon {
+  position: relative;
+  width: 54px;
+  box-sizing: content-box;
+  border-width: 50px 18px 0;
+  border-style: solid;
+  border-color: red transparent;
+}
+
+.red-pentagon:before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -85px;
+  left: -18px;
+  border-width: 0 45px 35px;
+  border-style: solid;
+  border-color: transparent transparent red;
+}
+
+.orange-pentagon {
+  position: relative;
+  width: 54px;
+  box-sizing: content-box;
+  border-width: 50px 18px 0;
+  border-style: solid;
+  border-color: orange transparent;
+}
+
+.orange-pentagon:before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -85px;
+  left: -18px;
+  border-width: 0 45px 35px;
+  border-style: solid;
+  border-color: transparent transparent orange;
+}
+
+.yellow-pentagon {
+  position: relative;
+  width: 54px;
+  box-sizing: content-box;
+  border-width: 50px 18px 0;
+  border-style: solid;
+  border-color: yellow transparent;
+}
+
+.yellow-pentagon:before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -85px;
+  left: -18px;
+  border-width: 0 45px 35px;
+  border-style: solid;
+  border-color: transparent transparent yellow;
+}
+
+.green-pentagon {
+  position: relative;
+  width: 54px;
+  box-sizing: content-box;
+  border-width: 50px 18px 0;
+  border-style: solid;
+  border-color: green transparent;
+}
+
+.green-pentagon:before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -85px;
+  left: -18px;
+  border-width: 0 45px 35px;
+  border-style: solid;
+  border-color: transparent transparent green;
+}
+
+.blue-pentagon {
+  position: relative;
+  width: 54px;
+  box-sizing: content-box;
+  border-width: 50px 18px 0;
+  border-style: solid;
+  border-color: blue transparent;
+}
+
+.blue-pentagon:before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -85px;
+  left: -18px;
+  border-width: 0 45px 35px;
+  border-style: solid;
+  border-color: transparent transparent blue;
+}
+
+.indigo-pentagon {
   position: relative;
   width: 54px;
   box-sizing: content-box;
@@ -124,7 +996,7 @@ https://css-tricks.com/the-shapes-of-css/ */
   border-color: indigo transparent;
 }
 
-.pentagon:before {
+.indigo-pentagon:before {
   content: "";
   position: absolute;
   height: 0;
@@ -136,16 +1008,118 @@ https://css-tricks.com/the-shapes-of-css/ */
   border-color: transparent transparent indigo;
 }
 
-/*pentagon*/
-/*hexagon*/
-.hexagon {
+.violet-pentagon {
+  position: relative;
+  width: 54px;
+  box-sizing: content-box;
+  border-width: 50px 18px 0;
+  border-style: solid;
+  border-color: violet transparent;
+}
+
+.violet-pentagon:before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -85px;
+  left: -18px;
+  border-width: 0 45px 35px;
+  border-style: solid;
+  border-color: transparent transparent violet;
+}
+
+.cyan-pentagon {
+  position: relative;
+  width: 54px;
+  box-sizing: content-box;
+  border-width: 50px 18px 0;
+  border-style: solid;
+  border-color: cyan transparent;
+}
+
+.cyan-pentagon:before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -85px;
+  left: -18px;
+  border-width: 0 45px 35px;
+  border-style: solid;
+  border-color: transparent transparent cyan;
+}
+
+.red-hexagon {
+  width: 100px;
+  height: 57.735px;
+  background: red;
+  position: relative;
+}
+
+.red-hexagon::before {
+  content: "";
+  position: absolute;
+  top: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 28.8675px solid red;
+}
+
+.red-hexagon::after {
+  content: "";
+  position: absolute;
+  bottom: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 28.8675px solid red;
+}
+
+.orange-hexagon {
+  width: 100px;
+  height: 57.735px;
+  background: orange;
+  position: relative;
+}
+
+.orange-hexagon::before {
+  content: "";
+  position: absolute;
+  top: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 28.8675px solid orange;
+}
+
+.orange-hexagon::after {
+  content: "";
+  position: absolute;
+  bottom: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 28.8675px solid orange;
+}
+
+.yellow-hexagon {
   width: 100px;
   height: 57.735px;
   background: yellow;
   position: relative;
 }
 
-.hexagon::before {
+.yellow-hexagon::before {
   content: "";
   position: absolute;
   top: -28.8675px;
@@ -157,7 +1131,7 @@ https://css-tricks.com/the-shapes-of-css/ */
   border-bottom: 28.8675px solid yellow;
 }
 
-.hexagon::after {
+.yellow-hexagon::after {
   content: "";
   position: absolute;
   bottom: -28.8675px;
@@ -169,4 +1143,157 @@ https://css-tricks.com/the-shapes-of-css/ */
   border-top: 28.8675px solid yellow;
 }
 
-/*hexagon*/
+.green-hexagon {
+  width: 100px;
+  height: 57.735px;
+  background: green;
+  position: relative;
+}
+
+.green-hexagon::before {
+  content: "";
+  position: absolute;
+  top: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 28.8675px solid green;
+}
+
+.green-hexagon::after {
+  content: "";
+  position: absolute;
+  bottom: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 28.8675px solid green;
+}
+
+.blue-hexagon {
+  width: 100px;
+  height: 57.735px;
+  background: blue;
+  position: relative;
+}
+
+.blue-hexagon::before {
+  content: "";
+  position: absolute;
+  top: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 28.8675px solid blue;
+}
+
+.blue-hexagon::after {
+  content: "";
+  position: absolute;
+  bottom: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 28.8675px solid blue;
+}
+
+.indigo-hexagon {
+  width: 100px;
+  height: 57.735px;
+  background: indigo;
+  position: relative;
+}
+
+.indigo-hexagon::before {
+  content: "";
+  position: absolute;
+  top: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 28.8675px solid indigo;
+}
+
+.indigo-hexagon::after {
+  content: "";
+  position: absolute;
+  bottom: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 28.8675px solid indigo;
+}
+
+.violet-hexagon {
+  width: 100px;
+  height: 57.735px;
+  background: violet;
+  position: relative;
+}
+
+.violet-hexagon::before {
+  content: "";
+  position: absolute;
+  top: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 28.8675px solid violet;
+}
+
+.violet-hexagon::after {
+  content: "";
+  position: absolute;
+  bottom: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 28.8675px solid violet;
+}
+
+.cyan-hexagon {
+  width: 100px;
+  height: 57.735px;
+  background: cyan;
+  position: relative;
+}
+
+.cyan-hexagon::before {
+  content: "";
+  position: absolute;
+  top: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 28.8675px solid cyan;
+}
+
+.cyan-hexagon::after {
+  content: "";
+  position: absolute;
+  bottom: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 28.8675px solid cyan;
+}

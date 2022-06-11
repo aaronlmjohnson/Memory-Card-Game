@@ -1,42 +1,50 @@
 /*CSS for the shapes can be found at 
 https://css-tricks.com/the-shapes-of-css/ */
+$shapes: circle, triangle, square, star, heart, diamond, pentagon, hexagon;
+$colors: red, orange, yellow, green, blue, indigo, violet, cyan;
 
-.circle {
-    height: 50%;
-    width: 50%;
-    background-color: blue;
+@mixin square($color){
+    .#{$color}-square {
+        height: 20%;
+        width: 20%;
+        background-color: $color;
+    }
 }
 
-.square {
-    height: 50%;
-    width: 50%;
-    background-color: orange;
+@mixin circle($color){
+    .#{$color}-circle {
+        height: 20%;
+        width: 20%;
+        border-radius: 50%;
+        background-color: $color;
+    }
 }
 
-.triangle{
-	width: 0;
-	height: 0;
-	border-left: 100px solid transparent;
-	border-right: 100px solid transparent;
-    border-bottom: 200px solid cyan;
-
+@mixin triangle($color){
+    .#{$color}-triangle {
+        width: 0;
+        height: 0;
+        border-left: 60px solid transparent;
+        border-right: 60px solid transparent;
+        border-bottom: 120px solid $color;
+    }
 }
 
-/*star*/
-.star {
+@mixin star($color){
+  .#{$color}-star { //star
     margin: 50px 0;
     position: relative;
     display: block;
-    color: green;
+    color: $color;
     width: 0px;
     height: 0px;
     border-right: 100px solid transparent;
-    border-bottom: 70px solid green;
+    border-bottom: 70px solid $color;
     border-left: 100px solid transparent;
     transform: rotate(35deg);
   }
-  .star:before {
-    border-bottom: 80px solid green;
+  .#{$color}-star:before {
+    border-bottom: 80px solid $color;
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
     position: absolute;
@@ -48,59 +56,59 @@ https://css-tricks.com/the-shapes-of-css/ */
     content: '';
     transform: rotate(-35deg);
   }
-  .star:after {
+  .#{$color}-star:after {
     position: absolute;
     display: block;
-    color: green;
+    color: $color;
     top: 3px;
     left: -105px;
     width: 0px;
     height: 0px;
     border-right: 100px solid transparent;
-    border-bottom: 70px solid green;
+    border-bottom: 70px solid $color;
     border-left: 100px solid transparent;
     transform: rotate(-70deg);
     content: '';
   }
-  /*star*/
+}
 
-  /*heart*/
-  .heart {
+@mixin heart($color){
+  .#{$color}-heart {
     position: relative;
     width: 100px;
     height: 90px;
   }
 
-  .heart:before,
-  .heart:after {
+  .#{$color}-heart:before,
+  .#{$color}-heart:after {
     position: absolute;
     content: "";
     left: 50px;
     top: 0;
     width: 50px;
     height: 80px;
-    background: red;
+    background: $color;
     border-radius: 50px 50px 0 0;
     transform: rotate(-45deg);
     transform-origin: 0 100%;
   }
-  .heart:after {
+  .#{$color}-heart:after {
     left: 0;
     transform: rotate(45deg);
     transform-origin: 100% 100%;
   }
-  /*heart*/
+}
 
-  /*diamond*/
-  .diamond {
+@mixin diamond($color){
+  .#{$color}-diamond {
     width: 0;
     height: 0;
     border: 50px solid transparent;
-    border-bottom: 70px solid violet;
+    border-bottom: 70px solid $color;
     position: relative;
     top: -50px;
   }
-  .diamond:after {
+  .#{$color}-diamond:after {
     content: '';
     position: absolute;
     left: -50px;
@@ -108,43 +116,40 @@ https://css-tricks.com/the-shapes-of-css/ */
     width: 0;
     height: 0;
     border: 50px solid transparent;
-    border-top: 70px solid violet;
+    border-top: 70px solid $color;
   }
-/*diamond*/
-
-/*pentagon*/
-.pentagon {
-      position: relative;
-      width: 54px;
-      box-sizing: content-box;
-      border-width: 50px 18px 0;
-      border-style: solid;
-      border-color: indigo transparent;
-    }
-.pentagon:before {
-    content: "";
-    position: absolute;
-    height: 0;
-    width: 0;
-    top: -85px;
-    left: -18px;
-    border-width: 0 45px 35px;
-    border-style: solid;
-    border-color: transparent transparent indigo;
 }
 
-/*pentagon*/
+@mixin pentagon($color){
+  .#{$color}-pentagon {
+    position: relative;
+    width: 54px;
+    box-sizing: content-box;
+    border-width: 50px 18px 0;
+    border-style: solid;
+    border-color: $color transparent;
+  }
+    .#{$color}-pentagon:before {
+      content: "";
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: -85px;
+      left: -18px;
+      border-width: 0 45px 35px;
+      border-style: solid;
+      border-color: transparent transparent $color;
+  }
+}
 
-
-/*hexagon*/
-
-.hexagon {
+@mixin hexagon($color){
+  .#{$color}-hexagon {
     width: 100px;
     height: 57.735px;
-    background: yellow;
+    background: $color;
     position: relative;
   }
-.hexagon::before {
+.#{$color}-hexagon::before {
     content: "";
     position: absolute;
     top: -28.8675px;
@@ -153,9 +158,9 @@ https://css-tricks.com/the-shapes-of-css/ */
     height: 0;
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
-    border-bottom: 28.8675px solid yellow;
+    border-bottom: 28.8675px solid $color;
   }
-.hexagon::after {
+.#{$color}-hexagon::after {
     content: "";
     position: absolute;
     bottom: -28.8675px;
@@ -164,9 +169,65 @@ https://css-tricks.com/the-shapes-of-css/ */
     height: 0;
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
-    border-top: 28.8675px solid yellow;
+    border-top: 28.8675px solid $color;
   }
+}
+
+
+/*star*/
+
+  /*star*/
+
+  /*heart*/ //heart
+
+  /*heart*/
+
+  /*diamond*/
+
+/*diamond*/
+
+/*pentagon*/
+
+
+/*pentagon*/
+
+
+/*hexagon*/
+
+
 
   /*hexagon*/
+
+  @each $shape in $shapes{
+    @each $color in $colors {
+
+      @if $shape == "square" {
+        @include square($color);
+      }
+      @else if $shape == "circle" {
+        @include circle($color);
+      }
+      @else if $shape == "triangle" {
+        @include triangle($color);
+      }
+      @else if $shape == "star" {
+        @include star($color);
+      }
+      @else if $shape == "heart" {
+        @include heart($color);
+      }
+      @else if $shape == "diamond" {
+        @include diamond($color);
+      }
+      @else if $shape == "pentagon" {
+        @include pentagon($color);
+      }
+      @else {
+        @include hexagon($color);
+      }
+      
+    }
+  }
+
   
 
