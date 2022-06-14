@@ -4,7 +4,7 @@ $shapes: circle, triangle, square, star, heart, diamond, pentagon, hexagon;
 $colors: red, orange, yellow, green, blue, indigo, violet, cyan;
 
 @mixin square($color){
-    .#{$color}-square {
+    .#{"" + $color}-square {
         height: 20%;
         width: 20%;
         background-color: $color;
@@ -12,7 +12,7 @@ $colors: red, orange, yellow, green, blue, indigo, violet, cyan;
 }
 
 @mixin circle($color){
-    .#{$color}-circle {
+    .#{"" + $color}-circle {
         height: 20%;
         width: 20%;
         border-radius: 50%;
@@ -21,7 +21,7 @@ $colors: red, orange, yellow, green, blue, indigo, violet, cyan;
 }
 
 @mixin triangle($color){
-    .#{$color}-triangle {
+    .#{"" + $color}-triangle {
         width: 0;
         height: 0;
         border-left: 60px solid transparent;
@@ -31,7 +31,7 @@ $colors: red, orange, yellow, green, blue, indigo, violet, cyan;
 }
 
 @mixin star($color){
-  .#{$color}-star { //star
+  .#{"" + $color}-star { //star
     margin: 50px 0;
     position: relative;
     display: block;
@@ -43,7 +43,7 @@ $colors: red, orange, yellow, green, blue, indigo, violet, cyan;
     border-left: 100px solid transparent;
     transform: rotate(35deg);
   }
-  .#{$color}-star:before {
+  .#{"" + $color}-star:before {
     border-bottom: 80px solid $color;
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
@@ -56,7 +56,7 @@ $colors: red, orange, yellow, green, blue, indigo, violet, cyan;
     content: '';
     transform: rotate(-35deg);
   }
-  .#{$color}-star:after {
+  .#{"" + $color}-star:after {
     position: absolute;
     display: block;
     color: $color;
@@ -73,14 +73,14 @@ $colors: red, orange, yellow, green, blue, indigo, violet, cyan;
 }
 
 @mixin heart($color){
-  .#{$color}-heart {
+  .#{"" + $color}-heart {
     position: relative;
     width: 100px;
     height: 90px;
   }
 
-  .#{$color}-heart:before,
-  .#{$color}-heart:after {
+  .#{"" + $color}-heart:before,
+  .#{"" + $color}-heart:after {
     position: absolute;
     content: "";
     left: 50px;
@@ -92,7 +92,7 @@ $colors: red, orange, yellow, green, blue, indigo, violet, cyan;
     transform: rotate(-45deg);
     transform-origin: 0 100%;
   }
-  .#{$color}-heart:after {
+  .#{"" + $color}-heart:after {
     left: 0;
     transform: rotate(45deg);
     transform-origin: 100% 100%;
@@ -100,7 +100,7 @@ $colors: red, orange, yellow, green, blue, indigo, violet, cyan;
 }
 
 @mixin diamond($color){
-  .#{$color}-diamond {
+  .#{"" + $color}-diamond {
     width: 0;
     height: 0;
     border: 50px solid transparent;
@@ -108,7 +108,7 @@ $colors: red, orange, yellow, green, blue, indigo, violet, cyan;
     position: relative;
     top: -50px;
   }
-  .#{$color}-diamond:after {
+  .#{"" + $color}-diamond:after {
     content: '';
     position: absolute;
     left: -50px;
@@ -121,7 +121,7 @@ $colors: red, orange, yellow, green, blue, indigo, violet, cyan;
 }
 
 @mixin pentagon($color){
-  .#{$color}-pentagon {
+  .#{"" + $color}-pentagon {
     position: relative;
     width: 54px;
     box-sizing: content-box;
@@ -129,7 +129,7 @@ $colors: red, orange, yellow, green, blue, indigo, violet, cyan;
     border-style: solid;
     border-color: $color transparent;
   }
-    .#{$color}-pentagon:before {
+    .#{"" + $color}-pentagon:before {
       content: "";
       position: absolute;
       height: 0;
@@ -143,13 +143,13 @@ $colors: red, orange, yellow, green, blue, indigo, violet, cyan;
 }
 
 @mixin hexagon($color){
-  .#{$color}-hexagon {
+  .#{"" + $color}-hexagon {
     width: 100px;
     height: 57.735px;
     background: $color;
     position: relative;
   }
-.#{$color}-hexagon::before {
+.#{"" + $color}-hexagon::before {
     content: "";
     position: absolute;
     top: -28.8675px;
@@ -160,7 +160,7 @@ $colors: red, orange, yellow, green, blue, indigo, violet, cyan;
     border-right: 50px solid transparent;
     border-bottom: 28.8675px solid $color;
   }
-.#{$color}-hexagon::after {
+.#{"" + $color}-hexagon::after {
     content: "";
     position: absolute;
     bottom: -28.8675px;
@@ -173,34 +173,8 @@ $colors: red, orange, yellow, green, blue, indigo, violet, cyan;
   }
 }
 
-
-/*star*/
-
-  /*star*/
-
-  /*heart*/ //heart
-
-  /*heart*/
-
-  /*diamond*/
-
-/*diamond*/
-
-/*pentagon*/
-
-
-/*pentagon*/
-
-
-/*hexagon*/
-
-
-
-  /*hexagon*/
-
   @each $shape in $shapes{
     @each $color in $colors {
-
       @if $shape == "square" {
         @include square($color);
       }
@@ -225,7 +199,6 @@ $colors: red, orange, yellow, green, blue, indigo, violet, cyan;
       @else {
         @include hexagon($color);
       }
-      
     }
   }
 

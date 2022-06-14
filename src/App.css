@@ -47,10 +47,13 @@ table {
 	border-spacing: 0;
 }
 
+body {
+	height: 100vh;
+}
 .game-container { 
   background: black;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  height: 100vh;
+  height: 100%;
   gap: 10px;
 }
