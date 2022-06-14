@@ -1,18 +1,11 @@
 import './App.css';
 import React from 'react';
-import Card from './components/Card';
+import Deck from './components/Deck';
+
 function App() {
   return (
     <div className="game-container">
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-
+      <Deck />
     </div>
   );
 }
