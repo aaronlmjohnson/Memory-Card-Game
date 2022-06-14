@@ -1,0 +1,11 @@
+#scoreboard {
+    background-color: black;
+    color: white; 
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+}
+
+#current-score, #best-score{
+    font-size: 36px;
+}

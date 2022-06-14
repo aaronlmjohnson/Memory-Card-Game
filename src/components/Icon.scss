@@ -5,8 +5,8 @@ $colors: red, orange, yellow, green, blue, indigo, violet, cyan;
 
 @mixin square($color){
     .#{"" + $color}-square {
-        height: 20%;
-        width: 20%;
+        height: 50%;
+        width: 50%;
         background-color: $color;
     }
 }
