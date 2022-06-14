@@ -1,57 +1,57 @@
 /*CSS for the shapes can be found at 
 https://css-tricks.com/the-shapes-of-css/ */
 .red-circle {
-  height: 20%;
-  width: 20%;
+  height: 50%;
+  width: 50%;
   border-radius: 50%;
   background-color: red;
 }
 
 .orange-circle {
-  height: 20%;
-  width: 20%;
+  height: 50%;
+  width: 50%;
   border-radius: 50%;
   background-color: orange;
 }
 
 .yellow-circle {
-  height: 20%;
-  width: 20%;
+  height: 50%;
+  width: 50%;
   border-radius: 50%;
   background-color: yellow;
 }
 
 .green-circle {
-  height: 20%;
-  width: 20%;
+  height: 50%;
+  width: 50%;
   border-radius: 50%;
   background-color: green;
 }
 
 .blue-circle {
-  height: 20%;
-  width: 20%;
+  height: 50%;
+  width: 50%;
   border-radius: 50%;
   background-color: blue;
 }
 
 .indigo-circle {
-  height: 20%;
-  width: 20%;
+  height: 50%;
+  width: 50%;
   border-radius: 50%;
   background-color: indigo;
 }
 
 .violet-circle {
-  height: 20%;
-  width: 20%;
+  height: 50%;
+  width: 50%;
   border-radius: 50%;
   background-color: violet;
 }
 
 .cyan-circle {
-  height: 20%;
-  width: 20%;
+  height: 50%;
+  width: 50%;
   border-radius: 50%;
   background-color: cyan;
 }

@@ -2,6 +2,8 @@
     background: black;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    height: 100px;
+    height: 100%;
     gap: 10px;
+    justify-items: center;
+    align-items: center;
 }
