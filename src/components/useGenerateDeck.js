@@ -16,7 +16,7 @@ const useGenerateDeck = ()=>{
       const isCardUnique = (deck, arr)=>{
         if(arr === []) return false;
         return !deck.map((card)=>{
-            return arrayEquals(card, arr);
+            return arrayEquals([card[0], card[1]], arr);
         }).includes(true);
       }
     

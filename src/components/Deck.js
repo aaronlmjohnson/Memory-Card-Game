@@ -4,6 +4,7 @@ import "./Deck.css";
 
 const Deck = (props)=>{
     const {deck} = props;
+    console.log(deck);
     // const [selectedCards, setSelectedCards] = useState([]);
     
     // const addToSelected = (id)=>{
