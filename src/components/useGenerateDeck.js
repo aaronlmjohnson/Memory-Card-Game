@@ -4,6 +4,7 @@ import uniqid from "uniqid";
 const useGenerateDeck = ()=>{
     const SHAPES = ["circle", "triangle", "square", "star", "heart", "diamond", "pentagon", "hexagon"];
     const COLORS = ["red", "orange", "yellow", "green", "blue", "indigo", "violet", "cyan"];
+    
     const [deck, setDeck] = useState([]);
 
     const arrayEquals = (a, b) => {
