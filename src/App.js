@@ -10,14 +10,12 @@ function App() {
   useEffect(()=>{
     generateDeck();
   },[]);
-
-  console.log(deck);
   
   return (
     <div className="game-container">
       <Scoreboard currentScore = {0} bestScore = {0} />
 
-      {/* <Deck deck = {generateDeck(8)} isCardUnique = {isCardUnique}/> */}
+      {<Deck deck = {deck}/>}
     </div>
   );
 }

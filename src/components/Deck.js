@@ -3,27 +3,25 @@ import Card from "./Card";
 import "./Deck.css";
 
 const Deck = (props)=>{
-    const {deck, isCardUnique} = props;
-    const [selectedCards, setSelectedCards] = useState([]);
+    const {deck} = props;
+    // const [selectedCards, setSelectedCards] = useState([]);
     
-    const addToSelected = (id)=>{
-        console.log(selectedCards);
-        const selectedCard = findCard(id);
-        if(!isCardUnique(selectedCards, selectedCard)) return;
-        setSelectedCards([...selectedCards, selectedCard]);
+    // const addToSelected = (id)=>{
+    //     const selectedCard = findCard(id);
+    //     setSelectedCards([...selectedCards, selectedCard]);
 
-    }
+    // }
 
-    const findCard = (id)=>{
-        return deck.filter((card)=> card[2] === id);
-    }
+    // const findCard = (id)=>{
+    //     return deck.filter((card)=> card[2] === id);
+    // }
 
     return (
         <div id="deck">
             {
                 deck.map((cardInfo)=>{
                     const [shape, color, id] = cardInfo;
-                    return <Card shape = {shape} color = {color} id = {id} onClick={addToSelected} key={id}/>
+                    return <Card shape = {shape} color = {color} id = {id} onClick={""} key={id}/>
                 })
             }
         </div>
