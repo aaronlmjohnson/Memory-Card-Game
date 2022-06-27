@@ -9,7 +9,7 @@ function App() {
 
   useEffect(()=>{
     generateDeck();
-  }, deck);
+  },[]);
 
   console.log(deck);
   

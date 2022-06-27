@@ -4,9 +4,6 @@ import uniqid from "uniqid";
 const useGenerateDeck = ()=>{
     const SHAPES = ["circle", "triangle", "square", "star", "heart", "diamond", "pentagon", "hexagon"];
     const COLORS = ["red", "orange", "yellow", "green", "blue", "indigo", "violet", "cyan"];
-    const greenTriangle = ["triangle", "green"];
-    const redCircle = ["circle" , "red"];
-
     const [deck, setDeck] = useState([]);
 
     const arrayEquals = (a, b) => {
@@ -23,9 +20,8 @@ const useGenerateDeck = ()=>{
         }).includes(true);
       }
     
-      const generateUniqueCard = ()=>{
+      const generateUniqueCard = (deck)=>{
         let card = [];
-
         do{ 
           card = [SHAPES[(Math.floor(Math.random() * 8))], COLORS[(Math.floor(Math.random() * 8))]];
         }while(!isCardUnique(deck, card));
@@ -35,7 +31,7 @@ const useGenerateDeck = ()=>{
       
       const generateDeck = ()=>{
         for(let i = 0; i < 8; i++)
-            setDeck( prevDeck => [...prevDeck, generateUniqueCard()]);
+            setDeck( prevDeck => [...prevDeck, generateUniqueCard(prevDeck)]);
       }
       
 
