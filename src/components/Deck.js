@@ -1,14 +1,12 @@
 import React , {useState} from "react";
 import Card from "./Card";
 import "./Deck.css";
-import useSelectedCards from "./useSelectedCards";
 
 const Deck = (props)=>{
-    const {deck, updateScore} = props;
-
-    const {selectedCards, addToSelected} = useSelectedCards();
+    const {deck, updateScore, addToSelected, selectedCards, isGameOver} = props;
     
     const handleChange = (cardInfo)=>{
+        isGameOver(selectedCards, cardInfo);
         addToSelected(cardInfo);
         updateScore();
     }
