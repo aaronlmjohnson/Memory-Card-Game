@@ -4,10 +4,14 @@ import "./Deck.css";
 import useSelectedCards from "./useSelectedCards";
 
 const Deck = (props)=>{
-    const {deck} = props;
+    const {deck, updateScore} = props;
 
     const {selectedCards, addToSelected} = useSelectedCards();
     
+    const handleChange = (cardInfo)=>{
+        addToSelected(cardInfo);
+        updateScore();
+    }
     
     // const addToSelected = (id)=>{
     //     const selectedCard = findCard(id);
@@ -24,7 +28,7 @@ const Deck = (props)=>{
             {
                 deck.map((cardInfo)=>{
                     const [shape, color, id] = cardInfo;
-                    return <Card shape = {shape} color = {color} id = {id} onClick={()=> addToSelected(cardInfo)} key={id}/>
+                    return <Card shape = {shape} color = {color} id = {id} onClick={()=> handleChange(cardInfo)} key={id}/>
                 })
             }
         </div>

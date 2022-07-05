@@ -3,9 +3,12 @@ import React, {useState, useEffect} from 'react';
 import Deck from './components/Deck';
 import Scoreboard from './components/Scoreboard';
 import useGenerateDeck from './components/useGenerateDeck';
+import useScoreUpdater from './components/useScoreUpdater';
 
 function App() {
   const {deck, generateDeck} = useGenerateDeck();
+  const {score, updateScore } = useScoreUpdater();
+
 
   useEffect(()=>{
     generateDeck();
@@ -13,9 +16,9 @@ function App() {
   
   return (
     <div className="game-container">
-      <Scoreboard currentScore = {0} bestScore = {0} />
+      <Scoreboard currentScore = {score} bestScore = {0} />
 
-      {<Deck deck = {deck}/>}
+      {<Deck deck = {deck} updateScore = {updateScore}/>}
     </div>
   );
 }
