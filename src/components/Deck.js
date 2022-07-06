@@ -18,6 +18,3 @@ const Deck = (props)=>{
 }
 
 export default Deck;
-
-
-//
