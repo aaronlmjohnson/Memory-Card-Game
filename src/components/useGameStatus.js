@@ -21,8 +21,7 @@ const useGameStatus = ()=>{
         if(!isCardUnique(selectedCards, card)) setGameOver(true);
     }
 
-
-    return {gameOver, isGameOver}
+    return {gameOver, isGameOver, setGameOver}
 }
 
 export default useGameStatus;

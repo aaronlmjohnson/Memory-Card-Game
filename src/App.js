@@ -3,30 +3,49 @@ import React, {useState, useEffect} from 'react';
 import Deck from './components/Deck';
 import Scoreboard from './components/Scoreboard';
 import useGenerateDeck from './components/useGenerateDeck';
-import useScoreUpdater from './components/useScoreUpdater';
-import useSelectedCards from "./components/useSelectedCards";
 import useGameStatus from './components/useGameStatus';
 
 
 function App() {
   const {deck, generateDeck} = useGenerateDeck();
-  const {score, updateScore } = useScoreUpdater();
-  const {selectedCards, addToSelected} = useSelectedCards();
-  const {gameOver, isGameOver} = useGameStatus();
+  const [score, setScore] = useState(0);
+  const [bestScore, setBestScore] = useState(0);
+  const [selectedCards, setSelectedCards] = useState([]);
+  const {gameOver, isGameOver, setGameOver} = useGameStatus();
 
   useEffect(()=>{
     generateDeck();
   },[]);
 
-  console.log(`is game over: ${gameOver}`);
+  useEffect(()=> {if(gameOver) restartGame()})
 
+  const handleChange = (cardInfo)=>{
+    isGameOver(selectedCards, cardInfo);
 
-  
+ 
+    
+      setSelectedCards([...selectedCards, cardInfo]);
+      setScore((prevScore)=> prevScore+1);
+
+    
+}
+
+const restartGame = ()=>{
+  generateDeck();
+  setSelectedCards([]);
+  setBestScore(score > bestScore ? score : bestScore);
+  setScore(0);
+  setGameOver(false);
+}
+ 
   return (
     <div className="game-container">
-      <Scoreboard currentScore = {score} bestScore = {0} />
+      <Scoreboard currentScore = {score} bestScore = {bestScore} />
 
-      {<Deck deck = {deck} updateScore = {updateScore} addToSelected = {addToSelected} isGameOver = {isGameOver} selectedCards = {selectedCards} />}
+      {<Deck 
+        deck = {deck} 
+        handleChange = {handleChange}
+      />}
     </div>
   );
 }

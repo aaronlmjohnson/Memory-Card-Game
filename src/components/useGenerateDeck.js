@@ -31,6 +31,7 @@ const useGenerateDeck = ()=>{
       }
       
       const generateDeck = ()=>{
+        setDeck([]);
         for(let i = 0; i < 8; i++)
             setDeck( prevDeck => [...prevDeck, generateUniqueCard(prevDeck)]);
       }
