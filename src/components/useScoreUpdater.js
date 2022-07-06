@@ -11,7 +11,3 @@ const useScoreUpdater = ()=>{
 }
 
 export default useScoreUpdater;
-
-//instantiate in App.js pass updateScore method to deck to update score whenever card is clicked
-//pass score to Score to display the score
-//make useBestScoreUpdater

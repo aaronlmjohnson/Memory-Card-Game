@@ -37,7 +37,7 @@ const useGenerateDeck = ()=>{
       }
       
 
-      return {deck, generateDeck};
+      return {deck, generateDeck, setDeck};
 }
 
 export default useGenerateDeck;
